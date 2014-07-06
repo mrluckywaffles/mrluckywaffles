@@ -15,6 +15,7 @@ var catSecrets = function () {
                     genLink("MAL", "http://myanimelist.net/animelist/MrLuckyWaffles") +
                     genLink("STEAM", "http://steamcommunity.com/id/MrLuckyWaffles") +
                     genLink("XBL", "https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles") +
+                    genLink("GIT", "https://github.com/mrluckywaffles?tab=repositories") +
                     lineBreak +
                     lineBreak +
                     genLink("has anime been saved this week?", "http://www.hasanimebeensavedthisweek.com");
