@@ -11,12 +11,13 @@ var catSecrets = function () {
                     '<img src="http://i.imgur.com/pXz83RK.jpg" title="fuck" alt="kawaii cat" />' +
                     lineBreak +
                     lineBreak +
-                    genLink("Contact", "mailto:mrluckywaffles@gmail.com") +
-                    lineBreak +
-                    lineBreak +
+                    genLink("EMAIL", "mailto:mrluckywaffles@gmail.com") +
                     genLink("MAL", "http://myanimelist.net/animelist/MrLuckyWaffles") +
                     genLink("STEAM", "http://steamcommunity.com/id/MrLuckyWaffles") +
-                    genLink("XBL", "https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles");
+                    genLink("XBL", "https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles") +
+                    lineBreak +
+                    lineBreak +
+                    genLink("has anime been saved this week?", "http://www.hasanimebeensavedthisweek.com");
 
 				var catDiv = $("#catBox");
 				$("#clickableCat").on('click', function(ev){
