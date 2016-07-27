@@ -1,52 +1,44 @@
 <!DOCTYPE html>
-
-<!-- Hello! I hope you enjoy your stay at my humble webby place :3 -->
-
 <html>
-    <head>
-        <title>MLW</title>
-        <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="catSecrets.js"></script>
-        <link rel="shortcut icon" href="favicon.ico" />
-        <script type="text/javascript">
+<head>
+    <title>MrLuckyWaffles</title>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" />
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-37987533-1']);
-            _gaq.push(['_setDomainName', 'mrluckywaffles.com']);
-            _gaq.push(['_trackPageview']);
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jukebox.js"></script>
 
-        </script>
-    </head>
-    <body>
-        <div id="fourhead"></div>
-        <div class="centered" id="getreadyforthe">
-            welcome to the website of
-        </div>
-        <div class="centered" id="bigfckntitle">
-            Mr. Lucky Waffles
-        </div>
-        <div class="centered" id="catBox">
-			<img id="clickableCat" src="http://i.imgur.com/lnVd5Aa.gif" title="click click click" alt="happy cat" />
-        </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37987533-1']);
+        _gaq.push(['_setDomainName', 'mrluckywaffles.com']);
+        _gaq.push(['_trackPageview']);
 
-        <div class="centered" id="jswarning">
-            please enable js kthx
-        </div>
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-
-                catSecrets.init();
-
-            });
-        </script>
-    </body>
+    </script>
+</head>
+<body>
+    <div class="centered" id="catBox">
+        <h1> Mr. Lucky Waffles </h1>
+		<img id="clickableCat" src="http://i.imgur.com/lnVd5Aa.gif" title="pet me :3" alt="happy cat" />
+        <br><br>
+        <span class="link"><a href="mailto:mrluckywaffles@gmail.com">EMAIL</a></span>
+        <span class="link"><a href="http://myanimelist.net/animelist/MrLuckyWaffles">MAL</a></span>
+        <span class="link"><a href="http://steamcommunity.com/id/MrLuckyWaffles">STEAM</a></span>
+        <span class="link"><a href="https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles">XBL</a></span>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            loadJukebox();
+            $('#clickableCat').click(petKitty);
+        });
+    </script>
+</body>
 </html>
