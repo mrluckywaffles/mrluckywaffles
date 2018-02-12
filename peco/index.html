@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MrLuckyWaffles</title>
+  <link rel="shortcut icon" href="../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @keyframes grow {
+      from {
+        background-size: 1px;
+      }
+      to {
+        background-size: 100%;
+      }
+    }
+    html, body {
+      margin: 0px;
+      height: 100%;
+    }
+    body {
+      animation-name: grow;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      background-position: center;
+      background-size: 100px;
+      background-image: url('../img/peco.jpg');
+    }
+  </style>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37987533-1']);
+    _gaq.push(['_setDomainName', 'mrluckywaffles.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <audio autoplay loop src="../tunes/Ben Briggs - Dont Force It.mp3"></audio>
+</body>
+</html>

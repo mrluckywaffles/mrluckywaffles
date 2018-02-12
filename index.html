@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MrLuckyWaffles</title>
-    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.ico" />
+  <title>MrLuckyWaffles</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0px auto;
+    }
+    body {
+      background-color: #eeeeee;
+      font-family: "courier", Helvetica, Arial, sans-serif;
+      text-align: center;
+      font-size: 16px;
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="jukebox.js"></script>
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      padding-bottom: 20px;
+    }
+    .row {
+      padding: 5px;
+    }
+    .header {
+      font-size: 18px;
+    }
+    .avatar {
+      cursor: pointer;
+      width: 200px;
+    }
+    .link {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  </style>
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-37987533-1']);
-        _gaq.push(['_setDomainName', 'mrluckywaffles.com']);
-        _gaq.push(['_trackPageview']);
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37987533-1']);
+    _gaq.push(['_setDomainName', 'mrluckywaffles.com']);
+    _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
-    <div class="centered" id="catBox">
-        <h1> Mr. Lucky Waffles </h1>
-		<img id="clickableCat" src="http://i.imgur.com/lnVd5Aa.gif" title="pet me :3" alt="happy cat" />
-        <br><br>
-        <span class="link"><a href="mailto:mrluckywaffles@gmail.com">EMAIL</a></span>
-        <span class="link"><a href="http://myanimelist.net/animelist/MrLuckyWaffles">MAL</a></span>
-        <span class="link"><a href="http://steamcommunity.com/id/MrLuckyWaffles">STEAM</a></span>
-        <span class="link"><a href="https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles">XBL</a></span>
+  <div class="container">
+    <div class="row header">
+      Mr. Lucky Waffles
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            loadJukebox();
-            $('#clickableCat').click(petKitty);
-        });
-    </script>
+    <div class="row">
+      <a href="peco">
+  	   <img class="avatar" src="img/peco.jpg" title="click me" />
+      </a>
+    </div>
+    <div class="row">
+      <span class="link"><a href="mailto:mrluckywaffles@gmail.com">EMAIL</a></span>
+      <span class="link"><a href="http://myanimelist.net/animelist/MrLuckyWaffles">MAL</a></span>
+      <span class="link"><a href="http://steamcommunity.com/id/MrLuckyWaffles">STEAM</a></span>
+      <span class="link"><a href="https://live.xbox.com/en-US/Profile?gamertag=MrLuckyWaffles">XBL</a></span>
+    </div>
+  </div>
 </body>
 </html>
